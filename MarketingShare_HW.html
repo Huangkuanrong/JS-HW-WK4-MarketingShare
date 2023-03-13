@@ -1,271 +1,299 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)http://127.0.0.1:5500/MarketingShare_HW.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="./MarketingShare_HW_files/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style><style type="text/css">
-@font-face {
-  font-weight: 400;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+<html>
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
-}
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="./MarketingShare_HW_files/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<style type="text/css">
+		@font-face {
+			font-family: Roboto;
+			src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+		}
+	</style>
+	<style type="text/css">
+		@font-face {
+			font-weight: 400;
+			font-style: normal;
+			font-family: 'Circular-Loom';
 
-@font-face {
-  font-weight: 500;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+			src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+		}
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Medium.woff2') format('woff2');
-}
+		@font-face {
+			font-weight: 500;
+			font-style: normal;
+			font-family: 'Circular-Loom';
 
-@font-face {
-  font-weight: 700;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+			src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Medium.woff2') format('woff2');
+		}
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
-}
+		@font-face {
+			font-weight: 700;
+			font-style: normal;
+			font-family: 'Circular-Loom';
 
-@font-face {
-  font-weight: 900;
-  font-style:  normal;
-  font-family: 'Circular-Loom';
+			src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+		}
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2') format('woff2');
-}</style><style type="text/css">/* Chart.js */
-/*
+		@font-face {
+			font-weight: 900;
+			font-style: normal;
+			font-family: 'Circular-Loom';
+
+			src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Black.woff2') format('woff2');
+		}
+	</style>
+	<style type="text/css">
+		/* Chart.js */
+		/*
  * DOM element rendering detection
  * https://davidwalsh.name/detect-node-insertion
  */
-@keyframes chartjs-render-animation {
-	from { opacity: 0.99; }
-	to { opacity: 1; }
-}
+		@keyframes chartjs-render-animation {
+			from {
+				opacity: 0.99;
+			}
 
-.chartjs-render-monitor {
-	animation: chartjs-render-animation 0.001s;
-}
+			to {
+				opacity: 1;
+			}
+		}
 
-/*
+		.chartjs-render-monitor {
+			animation: chartjs-render-animation 0.001s;
+		}
+
+		/*
  * DOM element resizing detection
  * https://github.com/marcj/css-element-queries
  */
-.chartjs-size-monitor,
-.chartjs-size-monitor-expand,
-.chartjs-size-monitor-shrink {
-	position: absolute;
-	direction: ltr;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden;
-	pointer-events: none;
-	visibility: hidden;
-	z-index: -1;
-}
+		.chartjs-size-monitor,
+		.chartjs-size-monitor-expand,
+		.chartjs-size-monitor-shrink {
+			position: absolute;
+			direction: ltr;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			overflow: hidden;
+			pointer-events: none;
+			visibility: hidden;
+			z-index: -1;
+		}
 
-.chartjs-size-monitor-expand > div {
-	position: absolute;
-	width: 1000000px;
-	height: 1000000px;
-	left: 0;
-	top: 0;
-}
+		.chartjs-size-monitor-expand>div {
+			position: absolute;
+			width: 1000000px;
+			height: 1000000px;
+			left: 0;
+			top: 0;
+		}
 
-.chartjs-size-monitor-shrink > div {
-	position: absolute;
-	width: 200%;
-	height: 200%;
-	left: 0;
-	top: 0;
-}
-</style></head>
+		.chartjs-size-monitor-shrink>div {
+			position: absolute;
+			width: 200%;
+			height: 200%;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
 
-<body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed=""><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-    <div class="jumbotron bg-info">
-        <h1>2021年全球晶圓代工市佔率</h1>
-    </div>
-    <div id="container">
+<body data-new-gr-c-s-check-loaded="14.1100.0" data-gr-ext-installed="">
+	<div class="chartjs-size-monitor">
+		<div class="chartjs-size-monitor-expand">
+			<div class=""></div>
+		</div>
+		<div class="chartjs-size-monitor-shrink">
+			<div class=""></div>
+		</div>
+	</div>
+	<div class="jumbotron bg-info">
+		<h1>2021年全球晶圓代工市佔率</h1>
+	</div>
+	<div id="container">
+	</div>
+	<canvas id="mkShare" style="display: block; height: 1057px; width: 2114px;" width="1902" height="951"
+		class="chartjs-render-monitor"></canvas>
 
-    <table class="table table-bordered table-striped table-dark"><thead><tr><th>排名</th><th>公司</th><th>國別</th><th>市佔率%</th></tr></thead><tbody><tr><td>1</td><td>台積電</td><td>台灣</td><td>53.1</td></tr><tr><td>2</td><td>三星電子</td><td>韓國</td><td>17.3</td></tr><tr><td>3</td><td>聯電</td><td>台灣</td><td>7.2</td></tr><tr><td>4</td><td>格羅方德</td><td>美國</td><td>6.1</td></tr><tr><td>5</td><td>中芯國際</td><td>中國</td><td>5.3</td></tr><tr><td>6</td><td>華虹半導體</td><td>中國</td><td>2.6</td></tr><tr><td>7</td><td>力積電</td><td>台灣</td><td>1.8</td></tr><tr><td>8</td><td>世界先進</td><td>台灣</td><td>1.4</td></tr><tr><td>9</td><td>高塔半導體</td><td>以色列</td><td>1.4</td></tr><tr><td>10</td><td>東部高科</td><td>南韓</td><td>1</td></tr></tbody></table></div>
-    <canvas id="mkShare" style="display: block; height: 1057px; width: 2114px;" width="1902" height="951" class="chartjs-render-monitor"></canvas>
+	<script src="./MarketingShare_HW_files/Chart.bundle.js.下載"
+		integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./MarketingShare_HW_files/Chart.bundle.js.下載" integrity="sha512-G8JE1Xbr0egZE5gNGyUm1fF764iHVfRXshIoUWCTPAbKkkItp/6qal5YAHXrxEu4HNfPTQs6HOu3D5vCGS1j3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+	<script>
+		let marketingShare = {
+			version: "v1.0",
+			publish: "2021/12/31",
+			report: "2021年全球晶圓代工市佔率",
+			titles: ['排名', '公司', '國別', '市佔率%'],
+			data: [
+				{ Ranking: 1, Company: "台積電", Country: "台灣", Ratio: "53.1" },
+				{ Ranking: 2, Company: "三星電子", Country: "韓國", Ratio: "17.3" },
+				{ Ranking: 3, Company: "聯電", Country: "台灣", Ratio: "7.2" },
+				{ Ranking: 4, Company: "格羅方德", Country: "美國", Ratio: "6.1" },
+				{ Ranking: 5, Company: "中芯國際", Country: "中國", Ratio: "5.3" },
+				{ Ranking: 6, Company: "華虹半導體", Country: "中國", Ratio: "2.6" },
+				{ Ranking: 7, Company: "力積電", Country: "台灣", Ratio: "1.8" },
+				{ Ranking: 8, Company: "世界先進", Country: "台灣", Ratio: "1.4" },
+				{ Ranking: 9, Company: "高塔半導體", Country: "以色列", Ratio: "1.4" },
+				{ Ranking: 10, Company: "東部高科", Country: "南韓", Ratio: "1" }
+			]
+		}
 
-    <script>
-        let marketingShare = {
-            version: "v1.0",
-            publish:"2021/12/31",
-            report:"2021年全球晶圓代工市佔率",
-            titles: ['排名', '公司', '國別', '市佔率%'],
-            data: [
-                { Ranking: 1, Company: "台積電", Country: "台灣", Ratio: "53.1" },
-                { Ranking: 2, Company: "三星電子", Country: "韓國", Ratio: "17.3" },
-                { Ranking: 3, Company: "聯電", Country: "台灣", Ratio: "7.2" },
-                { Ranking: 4, Company: "格羅方德", Country: "美國", Ratio: "6.1" },
-                { Ranking: 5, Company: "中芯國際", Country: "中國", Ratio: "5.3" },
-                { Ranking: 6, Company: "華虹半導體", Country: "中國", Ratio: "2.6" },
-                { Ranking: 7, Company: "力積電", Country: "台灣", Ratio: "1.8" },
-                { Ranking: 8, Company: "世界先進", Country: "台灣", Ratio: "1.4" },
-                { Ranking: 9, Company: "高塔半導體", Country: "以色列", Ratio: "1.4" },
-                { Ranking: 10, Company: "東部高科", Country: "南韓", Ratio: "1" }
-            ]
-        }
+		let MarketCountry2dArray = [];
 
-        let MarketCountry2dArray = [];
+		let container;
+		let table, thead, tbody, title;
+		let companies = [], data = [];
 
-        let container;
-        let table, thead, tbody, title;
-        let companies = [], data = [];  
+		window.onload = function () {
+			container = document.getElementById('container');
 
-        window.onload =function(){
-            container = document.getElementById('container');
+			table = document.createElement('table');
+			table.setAttribute("class", "table table-bordered table-striped table-dark");
+			thead = document.createElement('thead');
+			tbody = document.createElement('tbody');
 
-            table = document.createElement('table');
-            table.setAttribute("class", "table table-bordered table-striped table-dark");
-            thead = document.createElement('thead');
-            tbody = document.createElement('tbody');
+			CreateThead(marketingShare.titles);
 
-            CreateThead(marketingShare.titles);
+			//Object-->2D Array
 
-            //Object-->2D Array
+			marketingShare.data.forEach(corp => {
+				let values = Object.values(corp);
+				MarketCountry2dArray.push(values);
+			});
 
-            marketingShare.data.forEach(corp=>{
-                let values = Object.values(corp);
-                MarketCountry2dArray.push(values);
-            });
+			CreateTbody(MarketCountry2dArray);
 
-            CreateTbody(MarketCountry2dArray);
+			marketingShare.data.forEach(corp => {
+				companies.push(corp.Company);
+				data.push(corp.Ratio);
+			});
 
-            marketingShare.data.forEach(corp => {
-                companies.push(corp.Company);
-                data.push(corp.Ratio);
-            });
+			drawPieChart(companies, data);
+		}
 
-            
-            drawPieChart(companies, data);
-        }
+		function CreateThead(titleArray) {
+			//(1)
+			let theadTR = document.createElement("tr");
+			//(2)建立th,設定資料,th加入tr
+			titleArray.forEach((title, index) => {
+				let th = document.createElement("th");
+				th.innerText = title;
+				theadTR.append(th);
+			});
 
-        function CreateThead(titleArray){
-             //(1)
-            let theadTR = document.createElement("tr");
-            //(2)建立th,設定資料,th加入tr
-            titleArray.forEach((title, index)=>{
-                let th = document.createElement("th");
-                th.innerText = title;
-                theadTR.append(th);
-            });
+			thead.append(theadTR);
+			table.append(thead);
+			container.append(table);
+		}
 
-            thead.append(theadTR);
-            table.append(thead);
-            container.append(table);
-        }
+		function CreateTbody(MarketCountry) {
+			MarketCountry.forEach(Company => {
+				let tr = document.createElement("tr");
+				//(2)建立td,設定資料,td加入tr
+				//['台灣', 41, 1, 12]
+				Company.forEach(columndata => {
+					let td = document.createElement("td");
+					td.innerText = columndata;
 
-        function CreateTbody(MarketCountry){
-            MarketCountry.forEach(Company => { 
-                let tr = document.createElement("tr");
-                //(2)建立td,設定資料,td加入tr
-                //['台灣', 41, 1, 12]
-                Company.forEach(columndata => {
-                    let td = document.createElement("td");
-                    td.innerText = columndata;
+					tr.append(td);
+				});
+				tbody.append(tr);
+			});
 
-                    tr.append(td);
-                });
-                tbody.append(tr);
-            });
+			table.append(tbody);
+		}
 
-            table.append(tbody);
-        }
-
-        function drawPieChart(companyArray, dataArray) {
-            //Pie Chart圓餅圖
-            let ctxPie = document.getElementById("mkShare");
-            var pieChart = new Chart(ctxPie, {
-                type: 'pie',
-                data: {
-                    labels: companyArray,
-                    datasets: [{
-                        data: dataArray,
-                        backgroundColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(255,75,50)',
-                            'rgb(255, 205, 86)',
-                            'rgb(75, 192, 192)',
-                            'rgb(54, 162, 235)',
-                            'rgb(153, 102, 255)',
-                            'rgb(201, 203, 207)',
-                            'rgb(255, 138, 64)',
-                            'rgb(142, 65, 64)',
-                            'rgb(59, 72, 64)'
-                        ]
-                    }],
-                },
-                options: {
-                    responsive: true,
-                    title: {
-                        display: true,
-                        fontSize: 26,
-                        text: '2021年全球晶圓代工市佔率%'
-                    },
-                    tooltips: {
-                        mode: 'point',
-                        intersect: true,
-                    },
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            fontColor: 'black',
-                        }
-                    }
-                }
-            });
-        }
-    </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+		function drawPieChart(companyArray, dataArray) {
+			//Pie Chart圓餅圖
+			let ctxPie = document.getElementById("mkShare");
+			var pieChart = new Chart(ctxPie, {
+				type: 'pie',
+				data: {
+					labels: companyArray,
+					datasets: [{
+						data: dataArray,
+						backgroundColor: [
+							'rgb(255, 99, 132)',
+							'rgb(255,75,50)',
+							'rgb(255, 205, 86)',
+							'rgb(75, 192, 192)',
+							'rgb(54, 162, 235)',
+							'rgb(153, 102, 255)',
+							'rgb(201, 203, 207)',
+							'rgb(255, 138, 64)',
+							'rgb(142, 65, 64)',
+							'rgb(59, 72, 64)'
+						]
+					}],
+				},
+				options: {
+					responsive: true,
+					title: {
+						display: true,
+						fontSize: 26,
+						text: '2021年全球晶圓代工市佔率%'
+					},
+					tooltips: {
+						mode: 'point',
+						intersect: true,
+					},
+					legend: {
+						position: 'bottom',
+						labels: {
+							fontColor: 'black',
+						}
 					}
-					parent.appendChild(elem);
 				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
+			});
+		}
+	</script>
+	<!-- Code injected by live-server -->
+	<script>
+		// <![CDATA[  <-- For SVG support
+		if ('WebSocket' in window) {
+			(function () {
+				function refreshCSS() {
+					var sheets = [].slice.call(document.getElementsByTagName("link"));
+					var head = document.getElementsByTagName("head")[0];
+					for (var i = 0; i < sheets.length; ++i) {
+						var elem = sheets[i];
+						var parent = elem.parentElement || head;
+						parent.removeChild(elem);
+						var rel = elem.rel;
+						if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+							var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+							elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+						}
+						parent.appendChild(elem);
+					}
+				}
+				var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+				var address = protocol + window.location.host + window.location.pathname + '/ws';
+				var socket = new WebSocket(address);
+				socket.onmessage = function (msg) {
+					if (msg.data == 'reload') window.location.reload();
+					else if (msg.data == 'refreshcss') refreshCSS();
+				};
+				if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+					console.log('Live reload enabled.');
+					sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+				}
+			})();
+		}
+		else {
+			console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+		}
 	// ]]>
-</script>
+	</script>
 
 
-<script>
+	<script>
 		function returnCommentSymbol(language = "javascript") {
 			const languageObject = {
 				bat: "@REM",
@@ -334,127 +362,129 @@
 		var savedChPos = 0
 		var returnedSuggestion = ''
 		let editor, doc, cursor, line, pos
-		pos = {line: 0, ch: 0}
+		pos = { line: 0, ch: 0 }
 		var suggestionsStatus = false
 		var docLang = "python"
 		var suggestionDisplayed = false
 		var isReturningSuggestion = false
 		document.addEventListener("keydown", (event) => {
-		setTimeout(()=>{
-			editor = event.target.closest('.CodeMirror');
-			if (editor){
-				const codeEditor = editor.CodeMirror
-				if(!editor.classList.contains("added-tab-function")){
-					editor.classList.add("added-tab-function")
-					codeEditor.removeKeyMap("Tab")
-					codeEditor.setOption("extraKeys", {Tab: (cm)=>{
+			setTimeout(() => {
+				editor = event.target.closest('.CodeMirror');
+				if (editor) {
+					const codeEditor = editor.CodeMirror
+					if (!editor.classList.contains("added-tab-function")) {
+						editor.classList.add("added-tab-function")
+						codeEditor.removeKeyMap("Tab")
+						codeEditor.setOption("extraKeys", {
+							Tab: (cm) => {
 
-						if(returnedSuggestion){
-							acceptTab(returnedSuggestion)
-						}
-						else{
-							cm.execCommand("defaultTab")
-						}
-					}})
-				}
-				doc = editor.CodeMirror.getDoc()
-				cursor = doc.getCursor()
-				line = doc.getLine(cursor.line)
-				pos = {line: cursor.line, ch: line.length}
-
-				if(cursor.ch > 0){
-					savedChPos = cursor.ch
-				}
-
-				const fileLang = doc.getMode().name
-				docLang = fileLang
-				const commentSymbol = returnCommentSymbol(fileLang)
-				if (event.key == "?"){
-					var lastLine = line
-					lastLine = lastLine.slice(0, savedChPos - 1)
-
-					if(lastLine.trim().startsWith(commentSymbol[0])){
-						lastLine += " "+fileLang
-						lastLine = lastLine.split(commentSymbol[0])[1]
-						window.postMessage({source: 'getQuery', payload: { data: lastLine } } )
-						isReturningSuggestion = true
-						displayGrey("\nBlackbox loading...")
+								if (returnedSuggestion) {
+									acceptTab(returnedSuggestion)
+								}
+								else {
+									cm.execCommand("defaultTab")
+								}
+							}
+						})
 					}
-				}else if(event.key === "Enter" && suggestionsStatus && !isReturningSuggestion){
-					var query = doc.getRange({ line: Math.max(0,cursor.line-10), ch: 0 }, { line: cursor.line, ch: line.length })
-					window.postMessage({source: 'getSuggestion', payload: { data: query, language: docLang } } )
-					displayGrey("Blackbox loading...")
-				}else if(event.key === "ArrowRight" && returnedSuggestion){
-					acceptTab(returnedSuggestion)
-				}else if(event.key === "Enter" && isReturningSuggestion){
-					displayGrey("\nBlackbox loading...")
-				}else if(event.key === "Escape"){
-					displayGrey("")
+					doc = editor.CodeMirror.getDoc()
+					cursor = doc.getCursor()
+					line = doc.getLine(cursor.line)
+					pos = { line: cursor.line, ch: line.length }
+
+					if (cursor.ch > 0) {
+						savedChPos = cursor.ch
+					}
+
+					const fileLang = doc.getMode().name
+					docLang = fileLang
+					const commentSymbol = returnCommentSymbol(fileLang)
+					if (event.key == "?") {
+						var lastLine = line
+						lastLine = lastLine.slice(0, savedChPos - 1)
+
+						if (lastLine.trim().startsWith(commentSymbol[0])) {
+							lastLine += " " + fileLang
+							lastLine = lastLine.split(commentSymbol[0])[1]
+							window.postMessage({ source: 'getQuery', payload: { data: lastLine } })
+							isReturningSuggestion = true
+							displayGrey("\nBlackbox loading...")
+						}
+					} else if (event.key === "Enter" && suggestionsStatus && !isReturningSuggestion) {
+						var query = doc.getRange({ line: Math.max(0, cursor.line - 10), ch: 0 }, { line: cursor.line, ch: line.length })
+						window.postMessage({ source: 'getSuggestion', payload: { data: query, language: docLang } })
+						displayGrey("Blackbox loading...")
+					} else if (event.key === "ArrowRight" && returnedSuggestion) {
+						acceptTab(returnedSuggestion)
+					} else if (event.key === "Enter" && isReturningSuggestion) {
+						displayGrey("\nBlackbox loading...")
+					} else if (event.key === "Escape") {
+						displayGrey("")
+					}
 				}
-			}
-		}, 0)
+			}, 0)
 		})
 
-		function acceptTab(text){
-		if (suggestionDisplayed){
+		function acceptTab(text) {
+			if (suggestionDisplayed) {
+				displayGrey("")
+				doc.replaceRange(text, pos)
+				returnedSuggestion = ""
+				updateSuggestionStatus(false)
+			}
+		}
+		function acceptSuggestion(text) {
 			displayGrey("")
 			doc.replaceRange(text, pos)
 			returnedSuggestion = ""
 			updateSuggestionStatus(false)
 		}
-		}
-		function acceptSuggestion(text){
-			displayGrey("")
-			doc.replaceRange(text, pos)
-			returnedSuggestion = ""
-			updateSuggestionStatus(false)
-		}
-		function displayGrey(text){
-			if(!text){
+		function displayGrey(text) {
+			if (!text) {
 				document.querySelector(".blackbox-suggestion").remove()
 				return
 			}
 			var el = document.querySelector(".blackbox-suggestion")
-			if(!el){
+			if (!el) {
 				el = document.createElement('span')
 				el.classList.add("blackbox-suggestion")
 				el.style = 'color:grey'
 				el.innerText = text
 			}
-			else{
+			else {
 				el.innerText = text
 			}
-			
+
 			var lineIndex = pos.line;
 			editor.getElementsByClassName('CodeMirror-line')[lineIndex].appendChild(el)
 		}
-		function updateSuggestionStatus(s){
+		function updateSuggestionStatus(s) {
 			suggestionDisplayed = s
-			window.postMessage({source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion})
+			window.postMessage({ source: 'updateSuggestionStatus', status: suggestionDisplayed, suggestion: returnedSuggestion })
 		}
-		window.addEventListener('message', (event)=>{
-		if (event.source !== window ) return
-		if (event.data.source == 'return'){
-			isReturningSuggestion = false
-			const formattedCode = formatCode(event.data.payload.data)
-			returnedSuggestion = formattedCode
-			displayGrey(formattedCode)
-			updateSuggestionStatus(true)
-		}
-		if(event.data.source == 'suggestReturn'){
-			returnedSuggestion = event.data.payload.data
-			displayGrey(event.data.payload.data)
-			updateSuggestionStatus(true)
-		}
-		if(event.data.source == 'suggestionsStatus'){
-			suggestionsStatus = event.data.payload.enabled
-		}
-		if(event.data.source == 'acceptSuggestion'){
-			
-			acceptSuggestion(event.data.suggestion)
-		}
+		window.addEventListener('message', (event) => {
+			if (event.source !== window) return
+			if (event.data.source == 'return') {
+				isReturningSuggestion = false
+				const formattedCode = formatCode(event.data.payload.data)
+				returnedSuggestion = formattedCode
+				displayGrey(formattedCode)
+				updateSuggestionStatus(true)
+			}
+			if (event.data.source == 'suggestReturn') {
+				returnedSuggestion = event.data.payload.data
+				displayGrey(event.data.payload.data)
+				updateSuggestionStatus(true)
+			}
+			if (event.data.source == 'suggestionsStatus') {
+				suggestionsStatus = event.data.payload.enabled
+			}
+			if (event.data.source == 'acceptSuggestion') {
+
+				acceptSuggestion(event.data.suggestion)
+			}
 		})
-		document.addEventListener("keyup", function(){
+		document.addEventListener("keyup", function () {
 			returnedSuggestion = ""
 			updateSuggestionStatus(false)
 		})
@@ -462,7 +492,7 @@
 			if (Array.isArray(data)) {
 				var finalCode = ""
 				var pairs = []
-		
+
 				const commentSymbol = returnCommentSymbol(docLang)
 				data.forEach((codeArr, idx) => {
 					const code = codeArr[0]
@@ -478,17 +508,23 @@
 							finalDesc = finalDesc + commentSymbol[1] + "\n"
 						}
 					})
-		
+
 					finalCode += finalDesc + "\n\n" + code
 					pairs.push(finalCode)
 				})
-				return "\n"+pairs.join("\n")
+				return "\n" + pairs.join("\n")
 			}
-		
-			return "\n"+data
+
+			return "\n" + data
 		}
-		
+
 		function insert(str, index, value) {
 			return str.substr(0, index) + value + str.substr(index)
 		}
-	</script><loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"></scribe-shadow></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
+	</script><loom-container id="lo-engage-ext-container"><loom-shadow
+			classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow
+			classname="resolved"></loom-shadow></loom-container><scribe-shadow id="crxjs-ext"
+		style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;"></scribe-shadow>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
